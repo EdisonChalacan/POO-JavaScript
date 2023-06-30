@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manejo de Empleados</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <h1>Información del Empleado</h1>
+  <div id="employee-info" class="container">
+    <h2>Datos Personales:</h2>
+    <p>Nombre: <span id="name"></span></p>
+    <p>Apellido: <span id="lastname"></span></p>
+    <p>Género: <span id="gender"></span></p>
+    <p>Fecha de Nacimiento: <span id="birthdate"></span></p>
+    <p>Foto: <img id="photo" src="" alt="Foto del Empleado"></p>
+    <p>Fecha de Ingreso: <span id="hiredate"></span></p>
+    <p>Salario Básico: <span id="salary"></span></p>
+  </div>
+
+  <div id="actions" class="container">
+    <h2>Acciones:</h2>
+    <button id="update-salary-btn" class="btn btn-primary">Actualizar Salario</button>
+    <button id="calculate-age-btn" class="btn btn-primary">Calcular Edad</button>
+    <button id="calculate-seniority-btn" class="btn btn-primary">Calcular Antigüedad</button>
+    <button id="calculate-benefits-btn" class="btn btn-primary">Calcular Prestaciones</button>
+  </div>
+
+  <div id="option1" class="container">
+    <h2>Opción 1</h2>
+    <form id="additional-info-form">
+      <div class="mb-3">
+        <label for="education-level" class="form-label">Nivel de Formación Académica:</label>
+        <select class="form-select" id="education-level">
+          <option value="primaria">Primaria</option>
+          <option value="secundaria">Secundaria</option>
+          <option value="universitaria">Universitaria</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="school" class="form-label">Escuela:</label>
+        <input type="text" class="form-control" id="school">
+      </div>
+      <div class="mb-3">
+        <label for="degree" class="form-label">Título:</label>
+        <input type="text" class="form-control" id="degree">
+      </div>
+      <button id="save-info-btn" class="btn btn-primary">Guardar Información</button>
+    </form>
+  </div>
+
+  <div id="option2" class="container">
+    <h2>Opción 2</h2>
+    <button id="option2-btn" class="btn btn-primary">Realizar Funcionalidad Independiente</button>
+  </div>
+
+  <script src="employee.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
